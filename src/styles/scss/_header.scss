@@ -1,0 +1,104 @@
+.header-container {
+  width: 100%;
+  height: 105vh;
+  background: url(../../assets/background.jpg) no-repeat center center/cover;
+}
+.header-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 105%;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.4);
+  box-shadow: inset 0 70px 250px #000, inset -0 -70px 250px #000;
+}
+header,
+.showcase-wrapper {
+  position: relative;
+  z-index: 2;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 28px;
+  margin: 0 3.5rem;
+
+  div {
+    display: flex;
+  }
+}
+.netflix-logo {
+  height: 2.25rem;
+  width: 8.375rem;
+}
+.chevron-right-arrow {
+  display: inline-block;
+  width: 0.35em;
+  height: 0.75em;
+  margin-left: 1rem;
+
+  svg {
+    path {
+      fill: $fg-color-primary;
+    }
+  }
+}
+.showcase-wrapper {
+  border-bottom: 8px solid #222;
+}
+.showcase {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 150px 0;
+}
+.showcase-title {
+  margin-bottom: 1.2rem;
+}
+.showcase-sub-title {
+  font-weight: 500;
+  margin-bottom: 2.5rem;
+}
+form {
+  position: relative;
+
+  .form-title {
+    font-weight: 300;
+    margin-bottom: 1.2rem;
+  }
+  .form-main {
+    display: flex;
+
+    .label-email {
+      color: #8c8c8c;
+      position: absolute;
+      top: 68%;
+      left: 10px;
+    }
+    .input-email {
+      border: none;
+      outline: none;
+      border-radius: 3px 0 0 3px;
+      min-width: 450px;
+      height: 60px;
+      padding: 10px 10px 0;
+    }
+    .input-email:focus .label-email {
+      font-size: 13px;
+      top: 50%;
+    }
+    .signup-btn {
+      padding: 0 1rem;
+      min-height: 60px;
+      border-radius: 0 3px 3px 0;
+      font-size: 1.625rem;
+      border-left: 1px solid #333;
+    }
+  }
+}

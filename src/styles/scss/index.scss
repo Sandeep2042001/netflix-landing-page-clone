@@ -1,0 +1,37 @@
+@import 'config';
+@import 'header';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: $bg-color;
+  color: $fg-color-primary;
+}
+a {
+  text-decoration: none;
+}
+h1 {
+  font-size: 3.125rem;
+}
+h2 {
+  font-size: 1.625rem;
+}
+h3 {
+  font-size: 1.2rem;
+}
+.btn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+}
+.red-btn {
+  background-color: $netflix-color;
+  color: $fg-color-primary;
+  border-radius: 3px;
+}
