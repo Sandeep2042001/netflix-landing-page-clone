@@ -24,7 +24,7 @@ form .form-main .signup-btn { padding: 0 1rem; min-height: 60px; border-radius: 
 
 .header-container { width: 100%; height: 105vh; background: url(../../assets/background.jpg) no-repeat center center/cover; }
 
-.header-container::after { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 105%; z-index: 1; background: rgba(0, 0, 0, 0.4); box-shadow: inset 0 70px 250px #000, inset -0 -70px 250px #000; }
+.header-container::after { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 105vh; z-index: 1; background: rgba(0, 0, 0, 0.4); box-shadow: inset 0 70px 250px #000, inset -0 -70px 250px #000; }
 
 header, .showcase-wrapper { position: relative; z-index: 2; }
 
@@ -44,9 +44,53 @@ header div { display: flex; }
 
 .showcase-sub-title { font-weight: 500; margin-bottom: 2.5rem; }
 
+.animation-card { margin: 0 auto; max-width: 1100px; display: flex; align-items: center; }
+
+.animation-card-text-wrapper { width: 52%; height: 100%; }
+
+.animation-card-title { font-size: 3.125rem; line-height: 1.1; margin-bottom: 0.5rem; }
+
+.animation-card-sub-title { margin: 0.75em 0 0.25em; font-weight: 400; }
+
+.animation-card-image-wrapper { width: 48%; height: 100%; position: relative; }
+
+.animation-card .animation { width: 100%; height: 100%; }
+
+.animation-card-video { z-index: -1; position: absolute; }
+
+.animation-card .video-tv { max-width: 73%; max-height: 54%; left: 13%; top: 21%; }
+
+.animation-card .video-device-pile { max-width: 61%; max-height: 47%; left: 19%; top: 9%; }
+
+.animation-card-video { width: 100%; height: 100%; }
+
+.animation-card-icon { display: flex; justify-content: space-between; align-items: center; border: 2px solid #404040; border-radius: 8px; padding: 0.5em 0.75em; box-shadow: 0 0 2em 0 #000; max-height: 5.5em; min-width: 10rem; position: absolute; left: 20%; bottom: 10%; background: black; }
+
+.animation-card-icon-image-wrapper { margin-right: 1em; }
+
+.animation-card-icon-text-wrapper { margin-right: 2em; }
+
+.animation-card-icon-text-st { font-weight: 600; margin-bottom: 0.3em; }
+
+.animation-card-icon-text-d { color: #0071eb; }
+
+.animation-card-icon-image { height: 4.2em; }
+
+.animation-card-icon-icon-gif { height: 4.2em; }
+
+.main-content { z-index: 2; }
+
+.main-content section { border-bottom: 8px solid #222; padding: 70px 45px; }
+
+.main-content .download-your-shows-section .animation-card, .main-content .children-section .animation-card { flex-direction: row-reverse; }
+
+.main-content .download-your-shows-section .animation-card-text-wrapper, .main-content .children-section .animation-card-text-wrapper { padding-left: 3rem; }
+
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body { font-size: 16px; font-family: Arial, Helvetica, sans-serif; background-color: #000; color: #fff; }
+
+img { max-width: 100%; }
 
 a { text-decoration: none; }
 

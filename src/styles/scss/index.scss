@@ -2,6 +2,9 @@
 @import 'langselect';
 @import 'form';
 @import 'header';
+@import 'animationcard';
+@import 'faq';
+@import 'main';
 
 * {
   margin: 0;
@@ -13,6 +16,9 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: $bg-color;
   color: $fg-color-primary;
+}
+img {
+  max-width: 100%;
 }
 a {
   text-decoration: none;
