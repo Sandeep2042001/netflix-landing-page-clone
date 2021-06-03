@@ -33,6 +33,51 @@ header {
   height: 2.25rem;
   width: 8.375rem;
 }
+select {
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  color: $fg-color-primary;
+  padding: 0 1em 0 0;
+  width: 100%;
+}
+.lang-select {
+  font-size: 0.875rem;
+  line-height: 1.3em;
+  border: 1px solid #aaa;
+  border-radius: 0.1em;
+  padding: 0 1.375rem;
+  background: rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+.lang-select-wrapper::before {
+  content: '';
+  background: url(../../assets/globe.png) no-repeat center center;
+  width: 19px;
+  height: 17px;
+  display: block;
+  position: relative;
+  top: 11px;
+  left: 23px;
+  background-size: 16px 15px;
+}
+.lang-select-wrapper::after {
+  content: '';
+  width: 15px;
+  height: 8px;
+  background-color: #fff;
+  -webkit-clip-path: polygon(100% 0%, 0% 0%, 50% 100%);
+  clip-path: polygon(100% 0%, 0% 0%, 50% 100%);
+  position: relative;
+  top: 15px;
+  left: -22px;
+}
+.signin-btn {
+  padding: 7px 17px;
+  line-height: 1.4;
+  margin-left: 1.5rem;
+  font-size: 1rem;
+}
 .chevron-right-arrow {
   display: inline-block;
   width: 0.35em;
