@@ -1,4 +1,6 @@
 @import 'config';
+@import 'langselect';
+@import 'form';
 @import 'header';
 
 * {
@@ -24,7 +26,15 @@ h2 {
 h3 {
   font-size: 1.2rem;
 }
-.btn {
+select {
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  color: $fg-color-primary;
+  padding: 0 1em 0 0;
+}
+button {
   border: none;
   outline: none;
   cursor: pointer;
