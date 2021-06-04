@@ -12,6 +12,7 @@
   height: 105vh;
   z-index: 1;
   background: rgba(0, 0, 0, 0.4);
+  border-bottom: 8px solid #222;
   box-shadow: inset 0 70px 250px #000, inset -0 -70px 250px #000;
 }
 header,
@@ -40,9 +41,6 @@ header {
   font-size: 1rem;
   white-space: nowrap;
 }
-.showcase-wrapper {
-  border-bottom: 8px solid #222;
-}
 .showcase {
   display: flex;
   flex-direction: column;
@@ -64,9 +62,10 @@ header {
 @media screen and (max-width: 430px) {
   .header-container {
     max-height: 80vh;
-    border-bottom: 8px solid #222;
   }
   .header-container::after {
+    height: 80vh;
+    border-bottom: 8px solid #222;
     box-shadow: inset 0 40px 100px #000, inset -0 -40px 100px #000;
   }
   header {

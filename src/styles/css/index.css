@@ -37,7 +37,7 @@ form .form-main .signup-btn { padding: 0 1rem; min-height: 60px; border-radius: 
 
 .header-container { width: 100%; height: 105vh; background: url(../../assets/background.jpg) no-repeat center center/cover; }
 
-.header-container::after { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 105vh; z-index: 1; background: rgba(0, 0, 0, 0.4); box-shadow: inset 0 70px 250px #000, inset -0 -70px 250px #000; }
+.header-container::after { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 105vh; z-index: 1; background: rgba(0, 0, 0, 0.4); border-bottom: 8px solid #222; box-shadow: inset 0 70px 250px #000, inset -0 -70px 250px #000; }
 
 header, .showcase-wrapper { position: relative; z-index: 2; }
 
@@ -49,16 +49,14 @@ header div { display: flex; }
 
 .signin-btn { padding: 7px 17px; line-height: 1.4; margin-left: 1.5rem; font-size: 1rem; white-space: nowrap; }
 
-.showcase-wrapper { border-bottom: 8px solid #222; }
-
 .showcase { display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; max-width: 900px; margin: 0 auto; padding: 150px 0; }
 
 .showcase-title { margin-bottom: 1.2rem; }
 
 .showcase-sub-title { font-weight: 500; margin-bottom: 2.5rem; }
 
-@media screen and (max-width: 430px) { .header-container { max-height: 80vh; border-bottom: 8px solid #222; }
-  .header-container::after { box-shadow: inset 0 40px 100px #000, inset -0 -40px 100px #000; }
+@media screen and (max-width: 430px) { .header-container { max-height: 80vh; }
+  .header-container::after { height: 80vh; border-bottom: 8px solid #222; box-shadow: inset 0 40px 100px #000, inset -0 -40px 100px #000; }
   header { padding-top: 25px; margin: 0 1.4rem; align-items: center; }
   header div { align-items: center; }
   .netflix-logo { height: 24px; width: 89px; }
@@ -72,7 +70,7 @@ header div { display: flex; }
 
 .animation-card-text-wrapper { width: 52%; height: 100%; }
 
-.animation-card-title { font-size: 3.125rem; line-height: 1.1; margin-bottom: 0.5rem; }
+.animation-card-title { line-height: 1.1; margin-bottom: 0.5rem; }
 
 .animation-card-sub-title { margin: 0.75em 0 0.25em; font-weight: 400; }
 
@@ -102,6 +100,9 @@ header div { display: flex; }
 
 .animation-card-icon-icon-gif { height: 4.2em; }
 
+@media screen and (max-width: 430px) { .animation-card { flex-direction: column; text-align: center; }
+  .animation-card-text-wrapper, .animation-card-image-wrapper { width: 100%; } }
+
 .faq-title { text-align: center; line-height: 1.1; margin-bottom: 0.5rem; }
 
 .qna { font-size: 1.625rem; max-width: 815px; margin: 2em auto; }
@@ -125,6 +126,8 @@ header div { display: flex; }
 .main-content .download-your-shows-section .animation-card, .main-content .children-section .animation-card { flex-direction: row-reverse; }
 
 .main-content .download-your-shows-section .animation-card-text-wrapper, .main-content .children-section .animation-card-text-wrapper { padding-left: 3rem; }
+
+@media screen and (max-width: 430px) { .main-content section { padding: 50px 5%; } }
 
 .footer { padding: 70px 45px; color: #757575; font-size: 1em; width: 75%; margin: 0 auto; }
 
