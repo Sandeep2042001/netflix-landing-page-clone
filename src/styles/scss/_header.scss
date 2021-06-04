@@ -38,6 +38,7 @@ header {
   line-height: 1.4;
   margin-left: 1.5rem;
   font-size: 1rem;
+  white-space: nowrap;
 }
 .showcase-wrapper {
   border-bottom: 8px solid #222;
@@ -62,7 +63,7 @@ header {
 
 @media screen and (max-width: 430px) {
   .header-container {
-    max-height: 70vh;
+    max-height: 80vh;
     border-bottom: 8px solid #222;
   }
   .header-container::after {
