@@ -168,9 +168,12 @@ header div { display: flex; }
 
 .footer .footer-text-msg { text-align: center; color: #e50914; }
 
+@media screen and (max-width: 430px) { .footer { padding: 50px 5%; width: 90%; }
+  .footer li { width: 50%; } }
+
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
-body { font-size: 16px; font-family: Arial, Helvetica, sans-serif; background-color: #000; color: #fff; }
+body { font-size: 16px; font-family: Arial, Helvetica, sans-serif; background-color: #000; color: #fff; overflow-x: hidden; }
 
 img { max-width: 100%; }
 

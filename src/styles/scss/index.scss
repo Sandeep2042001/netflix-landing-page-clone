@@ -17,6 +17,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: $bg-color;
   color: $fg-color-primary;
+  overflow-x: hidden;
 }
 img {
   max-width: 100%;

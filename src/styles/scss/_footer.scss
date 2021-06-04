@@ -66,3 +66,14 @@
     color: $netflix-color;
   }
 }
+
+@media screen and (max-width: 430px) {
+  .footer {
+    padding: 50px 5%;
+    width: 90%;
+
+    li {
+      width: 50%;
+    }
+  }
+}
