@@ -1,0 +1,42 @@
+.faq-title {
+  text-align: center;
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+}
+.qna {
+  max-width: 815px;
+  margin: 2em auto;
+}
+.accordion {
+  background-color: #303030;
+  color: #fff;
+  font-size: 1.625rem;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  padding: 0.8em 1.2em;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+.accordion::after {
+  content: '\02795';
+  font-size: 1.625rem;
+  color: #fff;
+}
+.active::after {
+  content: '\274C';
+}
+.panel {
+  max-width: 1200px;
+  background-color: #303030;
+  display: none;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.25s cubic-bezier(0.5, 0, 0.1, 1);
+
+  p {
+    font-size: 1.625rem;
+    padding: 1.2em;
+  }
+}
