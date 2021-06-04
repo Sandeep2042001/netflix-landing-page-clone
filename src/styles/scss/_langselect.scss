@@ -30,3 +30,18 @@
   top: 15px;
   left: -22px;
 }
+
+@media screen and (max-width: 430px) {
+  .lang-select {
+    width: 100%;
+    padding: 4px 18px;
+  }
+  .lang-select-wrapper::before {
+    top: 1px;
+    left: 20px;
+  }
+  .lang-select-wrapper::after {
+    top: 1px;
+    left: -19px;
+  }
+}
