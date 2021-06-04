@@ -1,0 +1,18 @@
+.main-content {
+  z-index: 2;
+
+  section {
+    border-bottom: 8px solid #222;
+    padding: 70px 45px;
+  }
+  .download-your-shows-section,
+  .children-section {
+    .animation-card {
+      flex-direction: row-reverse;
+
+      &-text-wrapper {
+        padding-left: 3rem;
+      }
+    }
+  }
+}
