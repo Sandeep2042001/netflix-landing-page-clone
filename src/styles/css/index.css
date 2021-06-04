@@ -86,7 +86,9 @@ header div { display: flex; }
 
 .animation-card-video { width: 100%; height: 100%; }
 
-.animation-card-icon { display: flex; justify-content: space-between; align-items: center; border: 2px solid #404040; border-radius: 8px; padding: 0.5em 0.75em; box-shadow: 0 0 2em 0 #000; max-height: 5.5em; min-width: 10rem; position: absolute; left: 20%; bottom: 10%; background: black; }
+.animation-card-icon-wrapper { position: relative; }
+
+.animation-card-icon { display: flex; justify-content: space-between; align-items: center; border: 2px solid #404040; border-radius: 8px; padding: 0.5em 0.75em; box-shadow: 0 0 2em 0 #000; background: black; max-height: 5.5em; min-width: 10rem; width: 20rem; position: absolute; top: -95px; left: 50%; transform: translate(-50%, -50%); }
 
 .animation-card-icon-image-wrapper { margin-right: 1em; }
 
@@ -101,23 +103,30 @@ header div { display: flex; }
 .animation-card-icon-icon-gif { height: 4.2em; }
 
 @media screen and (max-width: 430px) { .animation-card { flex-direction: column; text-align: center; }
-  .animation-card-text-wrapper, .animation-card-image-wrapper { width: 100%; } }
+  .animation-card-text-wrapper, .animation-card-image-wrapper { width: 100%; }
+  .animation-card-icon { border-radius: 10px; width: 17rem; top: -60px; }
+  .animation-card-icon-text-wrapper { margin-right: 1em; display: flex; flex-direction: column; align-items: flex-start; }
+  .animation-card-icon-text-st { font-family: 14px; }
+  .animation-card-icon-text-d { font-size: 14px; }
+  .animation-card-icon-image, .animation-card-icon-icon-gif { height: 3em; } }
 
 .faq-title { text-align: center; line-height: 1.1; margin-bottom: 0.5rem; }
 
 .qna { font-size: 1.625rem; max-width: 815px; margin: 2em auto; }
 
-.accordion { background-color: #303030; color: #fff; font-size: 1.625rem; cursor: pointer; width: 100%; text-align: left; padding: 0.8em 1.2em; margin-bottom: 8px; display: flex; justify-content: space-between; }
+.accordion { background-color: #303030; color: #fff; font-size: inherit; cursor: pointer; width: 100%; text-align: left; padding: 0.8em 1.2em; margin-bottom: 8px; display: flex; justify-content: space-between; }
 
-.accordion::after { content: '\02795'; font-size: 1.625rem; color: #fff; }
+.accordion::after { content: '\02795'; font-size: inherit; color: #fff; }
 
 .active::after { content: '\274C'; }
 
 .panel { max-width: 1200px; background-color: #303030; display: none; overflow: hidden; max-height: 0; transition: max-height 0.25s cubic-bezier(0.5, 0, 0.1, 1); }
 
-.panel p { font-size: 1.625rem; padding: 1.2em; }
+.panel p { font-size: inherit; padding: 1.2em; }
 
 .form-wrapper { display: flex; flex-direction: column; align-items: center; margin-bottom: 1em; }
+
+@media screen and (max-width: 430px) { .qna { font-size: 1.125rem; } }
 
 .main-content { z-index: 2; }
 
@@ -127,7 +136,9 @@ header div { display: flex; }
 
 .main-content .download-your-shows-section .animation-card-text-wrapper, .main-content .children-section .animation-card-text-wrapper { padding-left: 3rem; }
 
-@media screen and (max-width: 430px) { .main-content section { padding: 50px 5%; } }
+@media screen and (max-width: 430px) { .main-content section { padding: 50px 5%; }
+  .main-content .download-your-shows-section .animation-card, .main-content .children-section .animation-card { flex-direction: column; }
+  .main-content .download-your-shows-section .animation-card-text-wrapper, .main-content .children-section .animation-card-text-wrapper { padding-left: 0; } }
 
 .footer { padding: 70px 45px; color: #757575; font-size: 1em; width: 75%; margin: 0 auto; }
 

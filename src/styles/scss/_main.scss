@@ -22,5 +22,15 @@
     section {
       padding: 50px 5%;
     }
+    .download-your-shows-section,
+    .children-section {
+      .animation-card {
+        flex-direction: column;
+
+        &-text-wrapper {
+          padding-left: 0;
+        }
+      }
+    }
   }
 }

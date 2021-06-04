@@ -30,26 +30,30 @@ const AnimationCard = ({
             </video>
           )}
           {downloadIcon && (
-            <div className="animation-card-icon">
-              <div className="animation-card-icon-image-wrapper">
-                <img
-                  className="animation-card-icon-image"
-                  src={strangerThings}
-                  alt="stranger things"
-                />
-              </div>
-              <div className="animation-card-icon-text-wrapper">
-                <div className="animation-card-icon-text-st">
-                  Stranger Things
+            <div className="animation-card-icon-wrapper">
+              <div className="animation-card-icon">
+                <div className="animation-card-icon-image-wrapper">
+                  <img
+                    className="animation-card-icon-image"
+                    src={strangerThings}
+                    alt="stranger things"
+                  />
                 </div>
-                <div className="animation-card-icon-text-d">Downloading...</div>
-              </div>
-              <div className="animation-card-icon-icon-wrapper">
-                <img
-                  className="animation-card-icon-icon-gif"
-                  src={downloadIcon}
-                  alt="download animation"
-                />
+                <div className="animation-card-icon-text-wrapper">
+                  <div className="animation-card-icon-text-st">
+                    Stranger Things
+                  </div>
+                  <div className="animation-card-icon-text-d">
+                    Downloading...
+                  </div>
+                </div>
+                <div className="animation-card-icon-icon-wrapper">
+                  <img
+                    className="animation-card-icon-icon-gif"
+                    src={downloadIcon}
+                    alt="download animation"
+                  />
+                </div>
               </div>
             </div>
           )}
