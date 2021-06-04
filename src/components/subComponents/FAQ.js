@@ -1,3 +1,5 @@
+import Form from '../subComponents/Form';
+
 const FAQ = () => {
   const handleClick = (e) => {
     e.target.classList.toggle('active');
@@ -103,6 +105,9 @@ const FAQ = () => {
             specific titles you don’t want kids to see.
           </p>
         </div>
+      </div>
+      <div className="form-wrapper">
+        <Form />
       </div>
     </div>
   );
