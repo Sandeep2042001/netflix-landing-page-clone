@@ -1,7 +1,0 @@
-.main-content { z-index: 2; }
-
-.main-content section { border-bottom: 8px solid #222; padding: 70px 45px; }
-
-.main-content .download-your-shows-section .animation-card, .main-content .children-section .animation-card { flex-direction: row-reverse; }
-
-.main-content .download-your-shows-section .animation-card-text-wrapper, .main-content .children-section .animation-card-text-wrapper { padding-left: 3rem; }
