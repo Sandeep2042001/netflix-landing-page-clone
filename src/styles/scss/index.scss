@@ -52,3 +52,15 @@ button {
   color: $fg-color-primary;
   border-radius: 3px;
 }
+
+@media screen and (max-width: 430px) {
+  h1 {
+    font-size: 1.75rem;
+  }
+  h2 {
+    font-size: 1.125rem;
+  }
+  h3 {
+    font-size: 0.9rem;
+  }
+}
