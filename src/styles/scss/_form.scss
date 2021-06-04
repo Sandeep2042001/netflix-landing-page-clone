@@ -48,3 +48,37 @@ form {
     }
   }
 }
+
+@media screen and (max-width: 430px) {
+  form {
+    .form-title {
+      max-width: 450px;
+      font-size: 18px;
+      padding: 0 4rem;
+    }
+    .form-main {
+      flex-direction: column;
+      align-items: center;
+
+      .label-email {
+        top: 52%;
+        left: 8%;
+        font-size: 0.9rem;
+      }
+      .input-email {
+        border-radius: 0;
+        height: 48px;
+        min-width: 330px;
+      }
+      .signup-btn {
+        font-size: 1rem;
+        min-height: 40px;
+        margin-top: 1.2rem;
+        border-radius: 4px;
+      }
+    }
+  }
+  .chevron-right-arrow {
+    margin-left: 0.5rem;
+  }
+}

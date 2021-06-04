@@ -4,6 +4,10 @@
 
 .lang-select-wrapper::after { content: ''; width: 15px; height: 8px; background-color: #fff; clip-path: polygon(100% 0%, 0% 0%, 50% 100%); position: relative; top: 15px; left: -22px; }
 
+@media screen and (max-width: 430px) { .lang-select { width: 100%; padding: 4px 18px; }
+  .lang-select-wrapper::before { top: 1px; left: 20px; }
+  .lang-select-wrapper::after { top: 1px; left: -19px; } }
+
 form { position: relative; }
 
 form .form-title { font-weight: 300; margin-bottom: 1.2rem; text-align: center; }
@@ -21,6 +25,13 @@ form .form-main .signup-btn { padding: 0 1rem; min-height: 60px; border-radius: 
 .chevron-right-arrow { display: inline-block; width: 0.35em; height: 0.75em; margin-left: 1rem; }
 
 .chevron-right-arrow svg path { fill: #fff; }
+
+@media screen and (max-width: 430px) { form .form-title { max-width: 450px; font-size: 18px; padding: 0 4rem; }
+  form .form-main { flex-direction: column; align-items: center; }
+  form .form-main .label-email { top: 52%; left: 8%; font-size: 0.9rem; }
+  form .form-main .input-email { border-radius: 0; height: 48px; min-width: 330px; }
+  form .form-main .signup-btn { font-size: 1rem; min-height: 40px; margin-top: 1.2rem; border-radius: 4px; }
+  .chevron-right-arrow { margin-left: 0.5rem; } }
 
 .header-container { width: 100%; height: 105vh; background: url(../../assets/background.jpg) no-repeat center center/cover; }
 
@@ -43,6 +54,17 @@ header div { display: flex; }
 .showcase-title { margin-bottom: 1.2rem; }
 
 .showcase-sub-title { font-weight: 500; margin-bottom: 2.5rem; }
+
+@media screen and (max-width: 430px) { .header-container { max-height: 70vh; border-bottom: 8px solid #222; }
+  .header-container::after { box-shadow: inset 0 40px 100px #000, inset -0 -40px 100px #000; }
+  header { padding-top: 25px; margin: 0 1.4rem; align-items: center; }
+  header div { align-items: center; }
+  .netflix-logo { height: 24px; width: 89px; }
+  .signin-btn { padding: 2px 5px; margin-left: 0.3rem; }
+  .showcase-wrapper { border: none; }
+  .showcase { padding: 75px 0; }
+  .showcase-title { margin-bottom: 1rem; }
+  .showcase-sub-title { margin-bottom: 1rem; } }
 
 .animation-card { margin: 0 auto; max-width: 1100px; display: flex; align-items: center; }
 
@@ -149,3 +171,7 @@ select { appearance: none; background-color: transparent; border: none; width: 1
 button { border: none; outline: none; cursor: pointer; text-align: center; }
 
 .red-btn { background-color: #e50914; color: #fff; border-radius: 3px; }
+
+@media screen and (max-width: 430px) { h1 { font-size: 1.75rem; }
+  h2 { font-size: 1.125rem; }
+  h3 { font-size: 0.9rem; } }
