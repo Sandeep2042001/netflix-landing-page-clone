@@ -60,7 +60,7 @@ header {
   margin-bottom: 2.5rem;
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: $max-mobile-width) {
   .header-container {
     max-height: 80vh;
   }

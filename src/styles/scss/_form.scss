@@ -52,7 +52,7 @@ form {
   }
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: $max-mobile-width) {
   form {
     .form-title {
       max-width: 450px;

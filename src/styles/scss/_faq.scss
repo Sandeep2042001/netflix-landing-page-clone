@@ -48,7 +48,10 @@
   margin-bottom: 1em;
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: $max-mobile-width) {
+  .faq-title {
+    padding: 0 5%;
+  }
   .qna {
     font-size: 1.125rem;
   }

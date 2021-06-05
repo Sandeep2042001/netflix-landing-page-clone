@@ -54,7 +54,7 @@ button {
   border-radius: 3px;
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: $max-mobile-width) {
   h1 {
     font-size: 1.75rem;
   }

@@ -67,7 +67,7 @@
   }
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: $max-mobile-width) {
   .footer {
     padding: 50px 5%;
     width: 90%;

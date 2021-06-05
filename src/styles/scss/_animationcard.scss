@@ -87,7 +87,7 @@
   }
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: $max-mobile-width) {
   .animation-card {
     flex-direction: column;
     text-align: center;

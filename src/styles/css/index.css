@@ -126,7 +126,8 @@ header div { display: flex; }
 
 .form-wrapper { display: flex; flex-direction: column; align-items: center; margin-bottom: 1em; }
 
-@media screen and (max-width: 430px) { .qna { font-size: 1.125rem; } }
+@media screen and (max-width: 430px) { .faq-title { padding: 0 5%; }
+  .qna { font-size: 1.125rem; } }
 
 .main-content { z-index: 2; }
 
@@ -137,6 +138,7 @@ header div { display: flex; }
 .main-content .download-your-shows-section .animation-card-text-wrapper, .main-content .children-section .animation-card-text-wrapper { padding-left: 3rem; }
 
 @media screen and (max-width: 430px) { .main-content section { padding: 50px 5%; }
+  .main-content .faq-section { padding: 50px 0; }
   .main-content .download-your-shows-section .animation-card, .main-content .children-section .animation-card { flex-direction: column; }
   .main-content .download-your-shows-section .animation-card-text-wrapper, .main-content .children-section .animation-card-text-wrapper { padding-left: 0; } }
 
