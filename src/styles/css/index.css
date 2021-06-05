@@ -16,7 +16,7 @@ form .form-main { display: flex; }
 
 form .form-main .label-email-wrapper { position: relative; }
 
-form .form-main .label-email { color: #8c8c8c; position: absolute; top: 68%; left: 10px; }
+form .form-main .label-email { color: #8c8c8c; position: absolute; top: 50%; left: 14%; transform: translate(-50%, -50%); }
 
 form .form-main .input-email { border: none; outline: none; border-radius: 3px 0 0 3px; min-width: 450px; height: 60px; padding: 10px 10px 0; }
 
@@ -30,11 +30,12 @@ form .form-main .signup-btn { padding: 0 1rem; min-height: 60px; border-radius: 
 
 @media screen and (max-width: 949px) { form { max-width: 470px; }
   form .form-main { flex-direction: column; align-items: center; }
-  form .form-main .label-email { top: 50%; left: 17%; font-size: 0.9rem; transform: translate(-50%, -50%); }
+  form .form-main .label-email { font-size: 0.9rem; }
   form .form-main .input-email { border-radius: 0; height: 48px; }
   form .form-main .signup-btn { font-size: 1rem; min-height: 38px; border-radius: 4px; margin-top: 1rem; } }
 
 @media screen and (max-width: 550px) { form .form-title { max-width: 450px; font-size: 18px; padding: 0 2rem; }
+  form .form-main .label-email { left: 17%; }
   form .form-main .input-email { min-width: 330px; }
   form .form-main .signup-btn { margin-top: 1.2rem; }
   .chevron-right-arrow { margin-left: 0.5rem; } }

@@ -15,8 +15,9 @@ form {
     .label-email {
       color: #8c8c8c;
       position: absolute;
-      top: 68%;
-      left: 10px;
+      top: 50%;
+      left: 14%;
+      transform: translate(-50%, -50%);
     }
     .input-email {
       border: none;
@@ -60,10 +61,7 @@ form {
       align-items: center;
 
       .label-email {
-        top: 50%;
-        left: 17%;
         font-size: 0.9rem;
-        transform: translate(-50%, -50%);
       }
       .input-email {
         border-radius: 0;
@@ -87,6 +85,9 @@ form {
       padding: 0 2rem;
     }
     .form-main {
+      .label-email {
+        left: 17%;
+      }
       .input-email {
         min-width: 330px;
       }
