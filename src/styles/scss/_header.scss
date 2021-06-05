@@ -60,6 +60,19 @@ header {
   margin-bottom: 2.5rem;
 }
 
+@media screen and (max-width: $max-tablet-width) {
+  .header-container::after {
+    box-shadow: inset 0 40px 100px #000, inset -0 -40px 100px #000;
+  }
+  .netflix-logo {
+    height: 32px;
+    width: 108px;
+  }
+  .showcase {
+    padding: 15% 40px;
+  }
+}
+
 @media screen and (max-width: $max-mobile-width) {
   .header-container {
     max-height: 80vh;
@@ -67,7 +80,6 @@ header {
   .header-container::after {
     height: 80vh;
     border-bottom: 8px solid #222;
-    box-shadow: inset 0 40px 100px #000, inset -0 -40px 100px #000;
   }
   header {
     padding-top: 25px;

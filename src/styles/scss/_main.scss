@@ -17,14 +17,8 @@
   }
 }
 
-@media screen and (max-width: $max-mobile-width) {
+@media screen and (max-width: $max-tablet-width) {
   .main-content {
-    section {
-      padding: 50px 5%;
-    }
-    .faq-section {
-      padding: 50px 0;
-    }
     .download-your-shows-section,
     .children-section {
       .animation-card {
@@ -34,6 +28,17 @@
           padding-left: 0;
         }
       }
+    }
+  }
+}
+
+@media screen and (max-width: $max-mobile-width) {
+  .main-content {
+    section {
+      padding: 50px 5%;
+    }
+    .faq-section {
+      padding: 50px 0;
     }
   }
 }

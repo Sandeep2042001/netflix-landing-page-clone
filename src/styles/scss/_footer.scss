@@ -66,12 +66,19 @@
     color: $netflix-color;
   }
 }
-
-@media screen and (max-width: $max-mobile-width) {
+@media screen and (max-width: $max-tablet-width) {
   .footer {
     padding: 50px 5%;
     width: 90%;
 
+    li {
+      width: 33%;
+    }
+  }
+}
+
+@media screen and (max-width: $max-mobile-width) {
+  .footer {
     li {
       width: 50%;
     }
